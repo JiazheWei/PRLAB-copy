@@ -855,12 +855,29 @@
             border: 1px solid var(--border);
             border-radius: var(--radius);
             overflow: hidden;
+            position: relative;
             transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s;
         }
 
+        .member-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: var(--radius);
+            background: radial-gradient(circle at center 35%, transparent 50%, rgba(0,0,0,0.45) 100%);
+            opacity: 0;
+            transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            pointer-events: none;
+            z-index: 1;
+        }
+
         .member-card:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(27,19,48,0.18), 0 8px 20px rgba(27,19,48,0.10);
+        }
+
+        .member-card:hover::after {
+            opacity: 1;
         }
 
         .member-photo {
