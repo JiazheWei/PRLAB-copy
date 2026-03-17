@@ -7,7 +7,7 @@ homepage: https://kenli.example.com
 google_scholar: https://scholar.google.com/citations?user=EXAMPLE
 email: kenli@example.com
 github: https://github.com/kenli
-co_supervised: Co. w. Prof. Supervisor Name
+intern: Lovart AI
 order: 2
 ---
 

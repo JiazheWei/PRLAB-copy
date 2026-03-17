@@ -22,6 +22,9 @@ function createMemberCard(member) {
     if (member.co_supervised) {
         extra += '<p class="member-co-supervised">' + member.co_supervised + '</p>';
     }
+    if (member.intern) {
+        extra += '<p class="member-co-supervised">Intern: ' + member.intern + '</p>';
+    }
     if (member.affiliation) {
         extra += '<p class="member-affiliation">' + member.affiliation + '</p>';
     }

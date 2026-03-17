@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(cp -r \"D:/PRLab-Website/\"* \"D:/PRLAB-copy/\")",
-      "Bash(cp \"D:/PRLab-Website/.gitignore\" \"D:/PRLAB-copy/\")"
+      "Bash(cp \"D:/PRLab-Website/.gitignore\" \"D:/PRLAB-copy/\")",
+      "Bash(python generate_members_data.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python generate_members_data.py)"
     ]
   }
 }
