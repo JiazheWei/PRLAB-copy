@@ -190,7 +190,7 @@
         /* ===== HERO SECTION ===== */
         #home {
             background: linear-gradient(160deg, #1B1330 0%, #2A1654 45%, #1B1330 100%);
-            padding: clamp(80px, 10vw, 120px) 0;
+            padding: clamp(80px, 10vw, 120px) 0 clamp(48px, 6vw, 72px);
             position: relative;
             overflow: hidden;
         }
@@ -280,7 +280,7 @@
         .social-links {
             display: flex;
             gap: 8px;
-            margin-bottom: var(--space-xl);
+            margin-bottom: 0;
             flex-wrap: wrap;
         }
 
@@ -307,37 +307,7 @@
             background: rgba(255,255,255,0.1);
         }
 
-        .hero-stats {
-            display: flex;
-            gap: 0;
-        }
-
-        .stat-card {
-            padding: 0 32px;
-            border-left: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .stat-card:first-child {
-            padding-left: 0;
-            border-left: none;
-        }
-
-        .stat-number {
-            font-family: var(--font-display);
-            font-size: var(--text-xl);
-            font-weight: 700;
-            color: #FEFCFF;
-            line-height: 1.1;
-        }
-
-        .stat-label {
-            font-size: var(--text-xs);
-            color: rgba(255,255,255,0.4);
-            font-weight: 500;
-            margin-top: 2px;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-        }
+        /* stats removed */
 
         .hero-image { flex-shrink: 0; }
 
@@ -357,7 +327,7 @@
         }
 
         .hero-lab-badge, .hero-name, .hero-title,
-        .hero-contact, .social-links, .hero-stats, .hero-image {
+        .hero-contact, .social-links, .hero-image {
             animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
         }
 
@@ -366,7 +336,6 @@
         .hero-title     { animation-delay: 0.19s; }
         .hero-contact   { animation-delay: 0.26s; }
         .social-links   { animation-delay: 0.33s; }
-        .hero-stats     { animation-delay: 0.40s; }
         .hero-image     { animation-delay: 0.15s; }
 
         /* ===== ABOUT SECTION ===== */
@@ -1362,9 +1331,7 @@
             }
             .hero-contact { align-items: center; }
             .social-links { justify-content: center; }
-            .hero-stats { justify-content: center; }
             .hero-image img { width: 180px; height: 180px; }
-            .stat-card { padding: 0 20px; }
 
             .section-container,
             .footer-inner { padding: 0 20px; }
@@ -1391,8 +1358,6 @@
             .research-card:first-child { grid-column: 1; }
             .openings-grid  { grid-template-columns: 1fr; }
             .services-grid  { grid-template-columns: 1fr; }
-            .hero-stats { gap: 0; }
-            .stat-card { padding: 0 16px; }
         }
     </style>
 </head>
@@ -1461,20 +1426,6 @@
                 <a class="social-btn" href="https://x.com/scy994" target="_blank">
                     <i class="bi bi-twitter-x"></i> Twitter
                 </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-card">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Papers</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">7K+</div>
-                    <div class="stat-label">Citations</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">5+</div>
-                    <div class="stat-label">Members</div>
-                </div>
             </div>
         </div>
         <div class="hero-image">
