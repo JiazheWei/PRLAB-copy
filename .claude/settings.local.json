@@ -5,7 +5,8 @@
       "Bash(cp \"D:/PRLab-Website/.gitignore\" \"D:/PRLAB-copy/\")",
       "Bash(python generate_members_data.py)",
       "Bash(PYTHONIOENCODING=utf-8 python generate_members_data.py)",
-      "Bash(PYTHONIOENCODING=utf-8 python -c \":*)"
+      "Bash(PYTHONIOENCODING=utf-8 python -c \":*)",
+      "WebSearch"
     ]
   }
 }
