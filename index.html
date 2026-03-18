@@ -369,31 +369,10 @@
             margin-bottom: 14px;
         }
 
-        .ri-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .ri-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 7px 16px;
-            background: var(--accent-subtle);
-            border: 1px solid var(--accent-light);
-            border-radius: 100px;
-            color: var(--accent-dark);
+        .ri-inline {
             font-size: var(--text-sm);
-            font-weight: 500;
-            transition: all 0.2s;
-        }
-
-        .ri-tag i { font-size: var(--text-sm); }
-
-        .ri-tag:hover {
-            background: var(--accent-light);
-            border-color: var(--accent);
+            color: var(--text-secondary);
+            line-height: 1.8;
         }
 
         /* Recruit banner */
@@ -464,47 +443,29 @@
             margin: 44px 0 18px;
         }
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-        }
-
-        .service-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 22px;
-            transition: box-shadow 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-        }
-
-        .service-card:hover {
-            box-shadow: var(--shadow-md);
-        }
-
-        .service-card strong {
-            display: block;
-            font-size: var(--text-sm);
-            font-weight: 700;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 12px;
-        }
-
-        .service-tags {
+        .services-list {
             display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        .service-tag {
-            background: var(--accent-subtle);
-            color: var(--accent-dark);
-            border-radius: 6px;
-            padding: 4px 10px;
+        .services-row {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
             font-size: var(--text-sm);
-            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .services-role {
+            flex-shrink: 0;
+            font-weight: 700;
+            color: var(--text-primary);
+            min-width: 150px;
+        }
+
+        .services-venues {
+            color: var(--text-secondary);
         }
 
         /* visitor map is now in footer — styles are inline */
@@ -1313,7 +1274,7 @@
             .research-card:first-child { grid-template-columns: 1fr; }
             .research-featured-visual { display: none; }
             .openings-grid  { grid-template-columns: repeat(2, 1fr); }
-            .services-grid  { grid-template-columns: repeat(2, 1fr); }
+            .services-row { flex-direction: column; gap: 2px; }
             .footer-grid    { grid-template-columns: 1fr 1fr; }
         }
 
@@ -1364,7 +1325,6 @@
             .research-grid  { grid-template-columns: 1fr; }
             .research-card:first-child { grid-column: 1; }
             .openings-grid  { grid-template-columns: 1fr; }
-            .services-grid  { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -1464,14 +1424,7 @@
 
         <div class="research-interest-block">
             <h3 class="ri-title">Research Interests</h3>
-            <div class="ri-tags">
-                <span class="ri-tag"><i class="bi bi-film"></i> Video Generation</span>
-                <span class="ri-tag"><i class="bi bi-stars"></i> Diffusion Models</span>
-                <span class="ri-tag"><i class="bi bi-eye"></i> Visual Understanding</span>
-                <span class="ri-tag"><i class="bi bi-speedometer2"></i> Efficient AI</span>
-                <span class="ri-tag"><i class="bi bi-image"></i> Image Editing & Morphing</span>
-                <span class="ri-tag"><i class="bi bi-bar-chart-line"></i> Evaluation Benchmarks</span>
-            </div>
+            <p class="ri-inline">Video Generation · Diffusion Models · Visual Understanding · World Models · Embodied AI · Agent · Efficient Generative Models · Evaluation Benchmarks</p>
         </div>
 
         <div class="recruit-banner">
@@ -1484,35 +1437,18 @@
         </div>
 
         <h3 class="services-heading">Academic Services</h3>
-        <div class="services-grid">
-            <div class="service-card">
-                <strong>Conference Area Chair</strong>
-                <div class="service-tags">
-                    <span class="service-tag">BMVC 2024</span>
-                    <span class="service-tag">BMVC 2025</span>
-                    <span class="service-tag">CVPR 2026</span>
-                </div>
+        <div class="services-list">
+            <div class="services-row">
+                <span class="services-role">Area Chair</span>
+                <span class="services-venues">BMVC 2024, BMVC 2025, CVPR 2026</span>
             </div>
-            <div class="service-card">
-                <strong>Conference Reviewer</strong>
-                <div class="service-tags">
-                    <span class="service-tag">CVPR</span>
-                    <span class="service-tag">ICCV</span>
-                    <span class="service-tag">NeurIPS</span>
-                    <span class="service-tag">ECCV</span>
-                    <span class="service-tag">AAAI</span>
-                    <span class="service-tag">ICLR</span>
-                </div>
+            <div class="services-row">
+                <span class="services-role">Conference Reviewer</span>
+                <span class="services-venues">CVPR, ICCV, NeurIPS, ECCV, AAAI, ICLR</span>
             </div>
-            <div class="service-card">
-                <strong>Journal Reviewer</strong>
-                <div class="service-tags">
-                    <span class="service-tag">TPAMI</span>
-                    <span class="service-tag">TIP</span>
-                    <span class="service-tag">TMM</span>
-                    <span class="service-tag">TCSVT</span>
-                    <span class="service-tag">IJCV</span>
-                </div>
+            <div class="services-row">
+                <span class="services-role">Journal Reviewer</span>
+                <span class="services-venues">TPAMI, TIP, TMM, TCSVT, IJCV</span>
             </div>
         </div>
 
