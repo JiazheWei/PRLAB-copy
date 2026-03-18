@@ -379,24 +379,11 @@
         .recruit-banner {
             display: flex;
             align-items: center;
-            gap: 20px;
-            background: var(--accent-subtle);
+            gap: 24px;
+            background: linear-gradient(135deg, #1B1330, #2A1654);
             border-radius: var(--radius);
-            padding: 24px 28px;
+            padding: 28px 32px;
             margin: 40px 0;
-        }
-
-        .recruit-icon {
-            flex-shrink: 0;
-            width: 44px;
-            height: 44px;
-            background: var(--accent-light);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: var(--text-lg);
-            color: var(--accent);
         }
 
         .recruit-text { flex: 1; }
@@ -404,13 +391,13 @@
         .recruit-text strong {
             display: block;
             font-size: var(--text-base);
-            color: var(--text-primary);
-            margin-bottom: 2px;
+            color: #FEFCFF;
+            margin-bottom: 4px;
         }
 
         .recruit-text span {
             font-size: var(--text-sm);
-            color: var(--text-body);
+            color: rgba(255,255,255,0.6);
             line-height: 1.5;
         }
 
@@ -419,8 +406,9 @@
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            padding: 9px 20px;
-            background: var(--accent);
+            padding: 10px 22px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.25);
             color: #fff;
             border-radius: var(--radius-sm);
             font-size: var(--text-sm);
@@ -430,7 +418,8 @@
         }
 
         .recruit-btn:hover {
-            background: var(--accent-hover);
+            background: rgba(255,255,255,0.18);
+            border-color: rgba(255,255,255,0.4);
             color: #fff;
         }
 
@@ -1422,18 +1411,17 @@
             video understanding, generative models, video and image generation, as well as acceleration and optimization of generative models.
         </p>
 
-        <div class="research-interest-block">
-            <h3 class="ri-title">Research Interests</h3>
-            <p class="ri-inline">Video Generation · Diffusion Models · Visual Understanding · World Models · Embodied AI · Agent · Efficient Generative Models · Evaluation Benchmarks</p>
-        </div>
-
         <div class="recruit-banner">
-            <div class="recruit-icon"><i class="bi bi-megaphone-fill"></i></div>
             <div class="recruit-text">
                 <strong>We are actively recruiting!</strong>
                 <span>Openings for 2027 Ph.D. / Master's students and undergraduate / graduate Research Assistants.</span>
             </div>
             <a href="#openings" class="recruit-btn">Join Us <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="research-interest-block">
+            <h3 class="ri-title">Research Interests</h3>
+            <p class="ri-inline">Video Generation · Diffusion Models · Visual Understanding · World Models · Embodied AI · Agent · Efficient Generative Models · Evaluation Benchmarks</p>
         </div>
 
         <h3 class="services-heading">Academic Services</h3>
