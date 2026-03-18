@@ -851,6 +851,8 @@
 
         .member-info {
             padding: 16px;
+            display: flex;
+            flex-direction: column;
         }
 
         .member-name {
@@ -885,15 +887,20 @@
 
         .member-social {
             display: flex;
-            gap: 8px;
-            margin-top: 10px;
+            justify-content: space-evenly;
+            margin-top: auto;
             padding-top: 10px;
             border-top: 1px solid var(--border);
         }
 
         .member-social a {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: var(--text-secondary);
-            font-size: var(--text-base);
+            font-size: var(--text-lg);
+            padding: 6px 0;
             transition: color 0.2s;
         }
 
