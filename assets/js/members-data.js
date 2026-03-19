@@ -22,23 +22,11 @@ const labMembers = {
             name: "Ken Li",
             title: "Ph.D. Student",
             period: "2026.09~Present",
-            intern: "Lovart AI",
             photo: "./assets/img/people/liken.jpg",
-            homepage: "https://kenli.example.com",
-            google_scholar: "https://scholar.google.com/citations?user=EXAMPLE",
-            email: "kenli@example.com",
-            github: "https://github.com/kenli"
-        },
-{
-            name: "Ken Li",
-            title: "Ph.D. Student",
-            period: "2026.09~Present",
-            intern: "Lovart AI",
-            photo: "./assets/img/people/liken.jpg",
-            homepage: "https://kenli.example.com",
-            google_scholar: "https://scholar.google.com/citations?user=EXAMPLE",
-            email: "kenli@example.com",
-            github: "https://github.com/kenli"
+            homepage: "https://kiyotakali.github.io/",
+            google_scholar: "https://scholar.google.com.hk/citations?hl=en&view_op=list_works&gmla=AGd7smF9375hTbVBKaAD7CX5RZYkAEByzOlP5dh5dLWzvGjsawOzO4m3gtLu7ZAoGplFQUekAfige1z77nwWH52r61yp&user=-wXqlyYAAAAJ",
+            email: "2223312154@stu.xjtu.edu.cn",
+            github: "https://github.com/kiyotakali"
         },
 {
             name: "Shaohan Yu",
@@ -63,12 +51,11 @@ const labMembers = {
             name: "Jiazhe Wei",
             title: "Master's Student",
             period: "2026.09~Present",
-            intern: "Lovart AI",
-            photo: "./assets/img/people/liken.jpg",
-            homepage: "https://kenli.example.com",
-            google_scholar: "https://scholar.google.com/citations?user=EXAMPLE",
-            email: "kenli@example.com",
-            github: "https://github.com/kenli"
+            photo: "./assets/img/people/jiazhewei.jpg",
+            homepage: "https://jiazhewei.github.io/",
+            google_scholar: "https://scholar.google.com/citations?user=UgKRQJwAAAAJ&hl=en&oi=ao",
+            email: "jzw6545@gmail.com",
+            github: "https://github.com/JiazheWei"
         }
     ],
     
