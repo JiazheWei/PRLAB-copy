@@ -79,9 +79,16 @@ const labMembers = {
 {
             name: "Jiajun Liang",
             title: "Research Assistant",
-            period: "2026.09~Present",
+            period: "2026.01~Present",
             photo: "./assets/img/people/jiajunliang.jpg",
             email: "grealish2821@gmail.com"
+        },
+{
+            name: "Yucheng Liao",
+            title: "Research Assistant",
+            period: "2026.03~Present",
+            photo: "./assets/img/people/yuchengliao.jpg",
+            email: "cheng_2528@outlook.com"
         }
     ],
     
