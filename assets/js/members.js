@@ -48,6 +48,20 @@ function createGroup(title, members) {
         + '</div>';
 }
 
+function createAlumniList(members) {
+    if (!members || members.length === 0) return '';
+    var items = members.map(function(m) {
+        var name = m.homepage
+            ? '<a href="' + m.homepage + '" target="_blank">' + m.name + '</a>'
+            : m.name;
+        return '<div class="alumni-row">' + name + ', ' + m.title + '</div>';
+    }).join('');
+    return '<div class="members-group">'
+        + '<div class="members-group-title">Alumni</div>'
+        + '<div class="alumni-list">' + items + '</div>'
+        + '</div>';
+}
+
 function loadMembers() {
     var container = document.getElementById('members-container');
     if (!container) return;
@@ -62,6 +76,7 @@ function loadMembers() {
     html += createGroup('Master\'s Students', labMembers.master_students);
     html += createGroup('Research Assistants', labMembers.research_interns);
     html += createGroup('Visiting Scholars', labMembers.visiting_scholars);
+    html += createAlumniList(labMembers.alumni);
 
     container.innerHTML = html || '<p style="text-align:center;color:#999;">Member profiles coming soon.</p>';
 }

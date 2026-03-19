@@ -85,4 +85,13 @@ const labMembers = {
         }
     ],
     
+    alumni: [
+{
+            name: "Tianlin Pan",
+            title: "Research Assistant",
+            homepage: "https://tianlinn.com/",
+            alumni: "true"
+        }
+    ],
+    
 };

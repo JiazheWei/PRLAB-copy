@@ -28,8 +28,11 @@ def parse_yaml_frontmatter(content):
 
 def categorize_member(member_data):
     """Categorize member based on their title"""
+    if member_data.get('alumni', '').lower() == 'true':
+        return 'alumni'
+
     title = member_data.get('title', '').lower()
-    
+
     if 'ph.d' in title or 'phd' in title:
         return 'phd_students'
     elif 'master' in title:
@@ -48,7 +51,7 @@ def format_member_object(data, indent=8):
     
     # Add fields in order
     fields = ['name', 'title', 'period', 'co_supervised', 'intern', 'affiliation',
-              'photo', 'homepage', 'google_scholar', 'email', 'github']
+              'photo', 'homepage', 'google_scholar', 'email', 'github', 'alumni']
     
     for field in fields:
         if field in data and data[field]:
@@ -72,6 +75,7 @@ def generate_members_data_js():
         'master_students': [],
         'research_interns': [],
         'visiting_scholars': [],
+        'alumni': [],
         'other': []
     }
     
