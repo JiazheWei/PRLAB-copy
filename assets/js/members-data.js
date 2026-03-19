@@ -39,6 +39,22 @@ const labMembers = {
             google_scholar: "https://scholar.google.com/citations?user=EXAMPLE",
             email: "kenli@example.com",
             github: "https://github.com/kenli"
+        },
+{
+            name: "Shaohan Yu",
+            title: "Ph.D. Student",
+            period: "2026.09~Present",
+            photo: "./assets/img/people/shaohanyu.jpg",
+            homepage: "https://yushaohan.github.io",
+            google_scholar: "https://scholar.google.com/citations?user=w01MSWQAAAAJ",
+            email: "shaohanyu628@gmail.com"
+        },
+{
+            name: "Zeyu Lou",
+            title: "Ph.D. Student",
+            period: "2026.09~Present",
+            photo: "./assets/img/people/zeyulou.png",
+            email: "zeyu.lou.mail@gmail.com"
         }
     ],
     
