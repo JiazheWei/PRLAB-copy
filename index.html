@@ -552,27 +552,40 @@
         .research-works {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px;
+            gap: 4px 16px;
             margin-top: var(--space-md);
             padding-top: var(--space-md);
             border-top: 1px solid var(--border);
         }
 
         .research-work-tag {
-            display: inline-block;
-            padding: 4px 11px;
-            background: var(--accent-subtle);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 0;
+            background: none;
             color: var(--accent-dark);
-            border-radius: 6px;
             font-size: var(--text-sm);
             font-weight: 600;
             text-decoration: none;
-            transition: all 0.15s;
+            border-bottom: 1.5px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .research-work-tag::after {
+            content: '↗';
+            font-size: 0.75em;
+            opacity: 0;
+            transition: opacity 0.2s;
         }
 
         .research-work-tag:hover {
-            background: var(--accent);
-            color: #fff;
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        .research-work-tag:hover::after {
+            opacity: 1;
         }
 
         /* ===== NEWS SECTION ===== */
