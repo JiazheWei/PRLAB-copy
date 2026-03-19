@@ -34,7 +34,7 @@ def categorize_member(member_data):
         return 'phd_students'
     elif 'master' in title:
         return 'master_students'
-    elif 'intern' in title:
+    elif 'intern' in title or 'assistant' in title:
         return 'research_interns'
     elif 'visiting' in title or 'visitor' in title:
         return 'visiting_scholars'

@@ -60,7 +60,7 @@ function loadMembers() {
     var html = '';
     html += createGroup('PhD Students', labMembers.phd_students);
     html += createGroup('Master\'s Students', labMembers.master_students);
-    html += createGroup('Research Interns', labMembers.research_interns);
+    html += createGroup('Research Assistants', labMembers.research_interns);
     html += createGroup('Visiting Scholars', labMembers.visiting_scholars);
 
     container.innerHTML = html || '<p style="text-align:center;color:#999;">Member profiles coming soon.</p>';

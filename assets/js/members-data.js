@@ -56,4 +56,14 @@ const labMembers = {
         }
     ],
     
+    research_interns: [
+{
+            name: "Jiajun Liang",
+            title: "Research Assistant",
+            period: "2026.09~Present",
+            photo: "./assets/img/people/jiajunliang.jpg",
+            email: "grealish2821@gmail.com"
+        }
+    ],
+    
 };
